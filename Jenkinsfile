@@ -9,11 +9,11 @@ pipeline {
         }
     }
 
-    stages {
-        stage('Docker') {
-            steps {
-                sh 'docker build -t sample .'
-            }
-        }
-    }
+//     stages {
+//         stage('Docker') {
+//             steps {
+//                 sh 'docker build -t sample .'
+//             }
+//         }
+//     }
 }
