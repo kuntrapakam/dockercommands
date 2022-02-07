@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('DockerInstall') {
             steps {
-                sh 'yum install docker -y'
+                sh 'apt-get install docker -y'
             }
         }
     }
