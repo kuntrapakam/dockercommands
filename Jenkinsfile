@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('DockerInstall') {
             steps {
-                sh 'sudo apt-get install docker -y'
+                sh 'apt-get update -y'
+                sh 'apt-get install docker -y'
             }
         }
     }
