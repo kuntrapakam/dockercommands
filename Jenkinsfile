@@ -8,10 +8,10 @@ pipeline {
                 sh 'apt-get install docker -y'
             }
         }
-    }
         stage('Docker') {
             steps {
-                sh 'docker build -t sample .'
+                sh 'docker build -t sample ."
             }
         }
     }
+}
